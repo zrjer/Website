@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>My-New-Post</title>
+      <title>Hello World</title>
       <link href="/2019/11/24/My-New-Post/"/>
       <url>/2019/11/24/My-New-Post/</url>
       
-        <content type="html"><![CDATA[<p>###Hello world!</p>]]></content>
+        <content type="html"><![CDATA[<pre><code>cout&lt;&lt;&quot;Hello world!&quot;&lt;&lt;endl;</code></pre><hr>]]></content>
       
       
       
