@@ -1,8 +1,4 @@
 ---
-title: {声明文件}
+title: {{ title }}
 date: {{ date }}
-categories:
-- TypeScript
-tags:
-- TypeScript
 ---
