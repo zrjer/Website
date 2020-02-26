@@ -4,33 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="开源求解器汇总, 优化 神器 机器学习 Leetcode">
-    <meta name="description" content="线性规划问题
-
-
-name
-官网
-github地址
-语言
-方法
-
-
-
-HiGHS
-链接
-链接
-c++
-Simplex/Interior Point method
-
-
-PCx
-链接
-链接
-c
-Interior Point method
-
-
-C">
+    <meta name="keywords" content="Eigen使用, 优化 神器 机器学习 Leetcode">
+    <meta name="description" content="Eigen的安装参见博客.
+1.开始小例子#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;Dense&amp;gt;
+using Eigen::MatrixXd;
+int main()
+{
+  MatrixXd m(2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -38,7 +19,7 @@ C">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>开源求解器汇总 | 秃优化</title>
+    <title>Eigen使用 | 秃优化</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -271,7 +252,7 @@ C">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        开源求解器汇总
+                        Eigen使用
                     </div>
                 </div>
             </div>
@@ -404,14 +385,14 @@ C">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    319
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    6 Min
                 </div>
                 
 				
@@ -427,291 +408,140 @@ C">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="线性规划问题"><a href="#线性规划问题" class="headerlink" title="线性规划问题"></a>线性规划问题</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-<th>方法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>HiGHS</td>
-<td><a href="https://www.maths.ed.ac.uk/hall/HiGHS/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/ERGO-Code/HiGHS">链接</a></td>
-<td>c++</td>
-<td>Simplex/Interior Point method</td>
-</tr>
-<tr>
-<td>PCx</td>
-<td><a href="http://pages.cs.wisc.edu/~swright/PCx/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/lpoo/PCx">链接</a></td>
-<td>c</td>
-<td>Interior Point method</td>
-</tr>
-<tr>
-<td>Clp</td>
-<td><a href="https://www.coin-or.org/downloading/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/coin-or/Clp">链接</a></td>
-<td>c++</td>
-<td></td>
-</tr>
-<tr>
-<td>BPMPD</td>
-<td><a href="http://old.sztaki.hu/~meszaros/bpmpd/" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td>fortran</td>
-<td>Interior Point method</td>
-</tr>
-<tr>
-<td>HOPDM</td>
-<td><a href="https://www.maths.ed.ac.uk/~gondzio/software/hopdm.html" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td>fortran</td>
-<td>Interior Point method</td>
-</tr>
-<tr>
-<td>LIPSOL</td>
-<td><a href="https://www.caam.rice.edu/~zhang/lipsol/" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td>matlab</td>
-<td>Interior Point method</td>
-</tr>
-</tbody></table>
-<h3 id="线性整数规划问题"><a href="#线性整数规划问题" class="headerlink" title="线性整数规划问题"></a>线性整数规划问题</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CBC</td>
-<td><a href="https://www.coin-or.org/downloading/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/coin-or/Cbc">链接</a></td>
-<td>c++</td>
-</tr>
-<tr>
-<td>SCIP</td>
-<td><a href="https://scip.zib.de/" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>GLPK</td>
-<td><a href="http://www.gnu.org/software/glpk/" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td>c</td>
-</tr>
-</tbody></table>
-<h3 id="二次规划问题"><a href="#二次规划问题" class="headerlink" title="二次规划问题"></a>二次规划问题</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-<th>方法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OOQP</td>
-<td><a href="http://pages.cs.wisc.edu/~swright/ooqp/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/emgertz/OOQP">链接</a></td>
-<td>c</td>
-<td>Interior Point method</td>
-</tr>
-<tr>
-<td>QPALM</td>
-<td></td>
-<td><a href="https://github.com/Benny44/QPALM">链接</a></td>
-<td>c</td>
-<td>Augmented Lagrangian method</td>
-</tr>
-<tr>
-<td>qpOASES</td>
-<td></td>
-<td><a href="https://github.com/coin-or/qpOASES">链接</a></td>
-<td>c++</td>
-<td></td>
-</tr>
-<tr>
-<td>HPIPM</td>
-<td></td>
-<td><a href="https://github.com/giaf/hpipm">链接</a></td>
-<td>c</td>
-<td>Interior Point method</td>
-</tr>
-<tr>
-<td>OSQP</td>
-<td><a href="https://osqp.org/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/oxfordcontrol/osqp">链接</a></td>
-<td>c</td>
-<td>Operator Splitting  method</td>
-</tr>
-<tr>
-<td>QuadProg++</td>
-<td></td>
-<td><a href="https://github.com/liuq/QuadProgpp">链接</a></td>
-<td>c++</td>
-<td>active-set dual method</td>
-</tr>
-<tr>
-<td>pdco</td>
-<td></td>
-<td><a href="https://github.com/mxsaunders/pdco">链接</a></td>
-<td>matlab</td>
-<td></td>
-</tr>
-<tr>
-<td>Inexact_IP-PMM</td>
-<td></td>
-<td><a href="https://github.com/spougkakiotis/Inexact_IP-PMM">链接</a></td>
-<td>matlab</td>
-<td>Interior Point method</td>
-</tr>
-</tbody></table>
-<h3 id="二阶锥规划问题"><a href="#二阶锥规划问题" class="headerlink" title="二阶锥规划问题"></a>二阶锥规划问题</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-<th>方法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>scs</td>
-<td></td>
-<td><a href="https://github.com/cvxgrp/scs">链接</a></td>
-<td>c</td>
-<td>Operator Splitting</td>
-</tr>
-<tr>
-<td>ecos</td>
-<td></td>
-<td><a href="https://github.com/embotech/ecos">链接</a></td>
-<td>c</td>
-<td>Interior Point method</td>
-</tr>
-</tbody></table>
-<h3 id="非线性规划"><a href="#非线性规划" class="headerlink" title="非线性规划"></a>非线性规划</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-<th>方法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>IPOPT</td>
-<td><a href="https://www.coin-or.org/downloading/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/coin-or/Ipopt">链接</a></td>
-<td>c++</td>
-<td>Interior Point method</td>
-</tr>
-<tr>
-<td>WORHP</td>
-<td><a href="https://worhp.de/" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Optizelle</td>
-<td><a href="http://www.optimojoe.com/products/optizelle/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/OptimoJoe/Optizelle">链接</a></td>
-<td>c++</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="非线性整数规划问题"><a href="#非线性整数规划问题" class="headerlink" title="非线性整数规划问题"></a>非线性整数规划问题</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-<th>方法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>minotaur</td>
-<td><a href="https://wiki.mcs.anl.gov/minotaur/index.php/MINOTAUR" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/minotaur-solver/minotaur">链接</a></td>
-<td>c++</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="线性方程组求解"><a href="#线性方程组求解" class="headerlink" title="线性方程组求解"></a>线性方程组求解</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-<th>语言</th>
-<th>方法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>SuitSparse</td>
-<td><a href="http://faculty.cse.tamu.edu/davis/suitesparse.html" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/DrTimothyAldenDavis/SuiteSparse">链接</a></td>
-<td>c</td>
-<td>LU/Cholesky</td>
-</tr>
-<tr>
-<td>SuperLU</td>
-<td><a href="https://portal.nersc.gov/project/sparse/superlu/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/xiaoyeli/superlu_dist">链接</a></td>
-<td>c</td>
-<td>LU</td>
-</tr>
-<tr>
-<td>Eigen</td>
-<td><a href="http://eigen.tuxfamily.org/index.php?title=Main_Page" target="_blank" rel="noopener">链接</a></td>
-<td></td>
-<td></td>
-<td>LU/Cholesky</td>
-</tr>
-</tbody></table>
-<h3 id="有限元程序"><a href="#有限元程序" class="headerlink" title="有限元程序"></a>有限元程序</h3><table>
-<thead>
-<tr>
-<th>name</th>
-<th>官网</th>
-<th>github地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FreeFEM</td>
-<td><a href="https://doc.freefem.org/introduction/index.html" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/FreeFem/FreeFem-doc">链接</a></td>
-</tr>
-<tr>
-<td>sparselizard</td>
-<td><a href="http://www.sparselizard.org/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/halbux/sparselizard/">链接</a></td>
-</tr>
-<tr>
-<td>hypre</td>
-<td><a href="https://computing.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/hypre-space/hypre">链接</a></td>
-</tr>
-<tr>
-<td>libParanumal</td>
-<td><a href="https://www.paranumal.com/" target="_blank" rel="noopener">链接</a></td>
-<td><a href="https://github.com/paranumal/libparanumal">链接</a></td>
-</tr>
-</tbody></table>
-<hr>
+                <p>Eigen的安装参见<a href="https://www.cnblogs.com/qujingtongxiao/p/9937368.html" target="_blank" rel="noopener">博客</a>.</p>
+<h3 id="1-开始小例子"><a href="#1-开始小例子" class="headerlink" title="1.开始小例子"></a>1.开始小例子</h3><pre><code>#include &lt;iostream&gt;
+#include &lt;Dense&gt;
+using Eigen::MatrixXd;
+int main()
+{
+  MatrixXd m(2,2);
+  m(0,0) = 3;
+  m(1,0) = 2.5;
+  m(0,1) = -1;
+  m(1,1) = m(1,0) + m(0,1);
+  std::cout &lt;&lt; m &lt;&lt; std::endl;
+}</code></pre><p>在testeigen文件夹下面建立main.cpp文件，将以上内容考入其中，并将已经解压缩的eigen-3.3.7文件夹下面的Eigen文件夹整个的考到testeigen文件夹下面，最后进行编译：</p>
+<pre><code>g++ -I ./Eigen  main.cpp -o main.o</code></pre><p>执行</p>
+<pre><code>./main.o</code></pre><p>可以输出</p>
+<pre><code>  3  -1
+2.5 1.5</code></pre><h3 id="2-Eigen与Cmake"><a href="#2-Eigen与Cmake" class="headerlink" title="2.Eigen与Cmake"></a>2.Eigen与Cmake</h3><p>文件结构为</p>
+<pre><code>|--testEigen
+|  -- src
+|     -- main.cpp
+|  -- Eigen
+|  -- CMakeLists.txt
+|  -- build</code></pre><p>其中CMakeLists.txt中内容为</p>
+<pre><code>cmake_minimum_required (VERSION 2.6)
+project (TEST)
+set (TEST_VERSION 0.1)
+set(CMAKE_BUILD_TYPE &quot;Debug&quot;)
+set(CMAKE_CXX_FLAGS_DEBUG &quot;$ENV{CXXFLAGS} -O0 -Wall -g -ggdb -DDEBUG&quot;)
+set(CMAKE_CXX_FLAGS_RELEASE &quot;$ENV{CXXFLAGS} -O3 -Wall&quot;)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src DIR_SRC)
+include_directories(${PROJECT_SOURCE_DIR}/src)
+include_directories(${PROJECT_SOURCE_DIR}/Eigen)
+#link_directories(${PROJECT_SOURCE_DIR}/lib)
+add_executable(main ${DIR_SRC})</code></pre><h3 id="3-使用压缩列存储直接初始化矩阵"><a href="#3-使用压缩列存储直接初始化矩阵" class="headerlink" title="3.使用压缩列存储直接初始化矩阵"></a>3.使用压缩列存储直接初始化矩阵</h3><pre><code>#include &lt;Sparse&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+typedef Eigen::SparseMatrix&lt;double&gt; SpMat; // declares a column-major sparse matrix type of double
+int main(int argc, char** argv)
+{
+    int rows = 5,cols = 5,nnz = 8;
+    double values[8] = {22,  7, 3, 5, 14,   1, 17,   8};
+    int InnerIndices[8] = {1,   2, 0, 2, 4, 2, 1, 4};
+    int OuterStarts[6] = {0, 2, 4, 5, 6, 8};
+    Eigen::Map&lt;SpMat&gt; sm1(rows,cols,nnz,OuterStarts,InnerIndices,values);
+    std::cout&lt;&lt; sm1;
+    return 0;
+}</code></pre><p>输出结果：</p>
+<pre><code>0 3 0 0 0 
+22 0 0 0 17 
+7 5 0 1 0 
+0 0 0 0 0 
+0 0 14 0 8 </code></pre><h3 id="4-Eigen求解系数为对称矩阵的线性方程组"><a href="#4-Eigen求解系数为对称矩阵的线性方程组" class="headerlink" title="4.Eigen求解系数为对称矩阵的线性方程组"></a>4.Eigen求解系数为对称矩阵的线性方程组</h3><pre><code>#include &lt;Sparse&gt;
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+using namespace Eigen;
+using namespace std;
+typedef Eigen::SparseMatrix&lt;double&gt; SpMat; // declares a column-major sparse matrix type of double
+int main(int argc, char** argv)
+{
+  const int N = 10,ANZ = 19;
+  int Ap[N+1] = {0, 1, 2, 3, 4, 6, 7, 9, 11, 15, ANZ};
+  int Ai[ANZ] = {0, 1, 2, 3, 1,4, 5, 4,6, 4,7, 0,4,7,8, 1,4,6,9};
+  double Ax[ANZ] = {1.7, 1., 1.5, 1.1, .02,2.6, 1.2, 
+              .16,1.3, .09,1.6,.13,.52,.11,1.4, .01,.53,.56,3.1};
+  VectorXd b(N), x(N);
+  b(0) = .287;b(1) =.22;b(2)=.45;b(3)=.44;b(4)=2.486;
+  b(5)=.72;b(6)=1.55;b(7)=1.424;b(8)=1.621;b(9)=3.759; 
+  Eigen::Map&lt;SpMat,RowMajor&gt; sm2(N,N,ANZ,Ap,Ai,Ax);//注意这里是压缩行存储，因为是对称矩阵，只存了上半部分
+  std::cout&lt;&lt; sm2;
+  Eigen::SimplicialLLT&lt;SpMat,Upper &gt; solver;//声明这是矩阵的上半部分
+  solver.analyzePattern(sm2);   
+  solver.factorize(sm2);
+  if(solver.info()!=Success) {
+     cout&lt;&lt;&quot; decomposition failed!&quot;&lt;&lt;endl;
+      return -1;
+  }
+  x =  solver.solve(b);
+  if(solver.info()!=Success) {
+     cout&lt;&lt;&quot; solve failed!&quot;&lt;&lt;endl;
+      return -1;
+  }
+  cout&lt;&lt; x;
+  return 0;
+}</code></pre><p>这里我们使用了求解器SimplicialLLT，我们也可以使用其他的<a href="http://eigen.tuxfamily.org/dox/group__TopicSparseSystems.html" target="_blank" rel="noopener">求解器</a>,例如PastixLLT，PastixLDLT，PastixLU等，但是需要包含相应的包与头文件。输出结果如下：</p>
+<pre><code>1.7 0 0 0 0 0 0 0 0.13 0 
+0 1 0 0 0.02 0 0 0 0 0.01 
+0 0 1.5 0 0 0 0 0 0 0 
+0 0 0 1.1 0 0 0 0 0 0 
+0 0 0 0 2.6 0 0.16 0.09 0.52 0.53 
+0 0 0 0 0 1.2 0 0 0 0 
+0 0 0 0 0 0 1.3 0 0 0.56 
+0 0 0 0 0 0 0 1.6 0.11 0 
+0 0 0 0 0 0 0 0 1.4 0 
+0 0 0 0 0 0 0 0 0 3.1 
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1</code></pre><h3 id="5-Eigen中的对角矩阵"><a href="#5-Eigen中的对角矩阵" class="headerlink" title="5.Eigen中的对角矩阵"></a>5.Eigen中的对角矩阵</h3><p>参考<a href="http://eigen.tuxfamily.org/dox/group__QuickRefPage.html" target="_blank" rel="noopener">链接</a><br>对角矩阵的使用有两种方式。第一种是声明一个对角矩阵，然后用向量来赋值，第二种是把向量看做对角矩阵<br>首先在上面文件开头加上</p>
+<pre><code>typedef Eigen::DiagonalMatrix&lt;double,Dynamic&gt; DiagMat;</code></pre><p>结尾处加上</p>
+<pre><code>DiagMat S(N);
+VectorXd c(N);
+for(int i=0;i&lt;N;i++)
+    c(i) = i+1;
+S.diagonal() = c;
+cout&lt;&lt; S*sm2&lt;&lt;endl;//方式一
+cout&lt;&lt; c.asDiagonal()*sm2&lt;&lt;endl;//方式二</code></pre><p>输出结果</p>
+<pre><code>1.7 0 0 0 0 0 0 0 0.13 0 
+0 2 0 0 0.04 0 0 0 0 0.02 
+0 0 4.5 0 0 0 0 0 0 0 
+0 0 0 4.4 0 0 0 0 0 0 
+0 0 0 0 13 0 0.8 0.45 2.6 2.65 
+0 0 0 0 0 7.2 0 0 0 0 
+0 0 0 0 0 0 9.1 0 0 3.92 
+0 0 0 0 0 0 0 12.8 0.88 0 
+0 0 0 0 0 0 0 0 12.6 0 
+0 0 0 0 0 0 0 0 0 31 
+
+1.7 0 0 0 0 0 0 0 0.13 0 
+0 2 0 0 0.04 0 0 0 0 0.02 
+0 0 4.5 0 0 0 0 0 0 0 
+0 0 0 4.4 0 0 0 0 0 0 
+0 0 0 0 13 0 0.8 0.45 2.6 2.65 
+0 0 0 0 0 7.2 0 0 0 0 
+0 0 0 0 0 0 9.1 0 0 3.92 
+0 0 0 0 0 0 0 12.8 0.88 0 
+0 0 0 0 0 0 0 0 12.6 0 
+0 0 0 0 0 0 0 0 0 31 </code></pre><hr>
 
             </div>
             <hr/>
@@ -737,7 +567,7 @@ C">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/zrjer/zrjer.github.io/2020/02/26/OpenSourceSolver/">https://github.com/zrjer/zrjer.github.io/2020/02/26/OpenSourceSolver/</a>
+                    <a href="https://github.com/zrjer/zrjer.github.io/2020/02/26/useEigen/">https://github.com/zrjer/zrjer.github.io/2020/02/26/useEigen/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -938,10 +768,9 @@ C">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
                 <a href="/2020/02/26/OpenSourceSolver/">
                     <div class="card-image">
@@ -984,9 +813,9 @@ C
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-26
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-26
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -995,7 +824,6 @@ C
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1006,30 +834,24 @@ C
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/26/useEigen/">
+                <a href="/2019/11/24/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Eigen使用">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Eigen使用</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Eigen的安装参见博客.
-1.开始小例子#include &lt;iostream&gt;
-#include &lt;Dense&gt;
-using Eigen::MatrixXd;
-int main()
-{
-  MatrixXd m(2
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-24
                             </span>
                         <span class="publish-author">
                             
