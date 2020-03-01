@@ -516,7 +516,10 @@ int main(int argc, char** argv)
 0.7
 0.8
 0.9
-1</code></pre><h3 id="5-Eigen中的对角矩阵"><a href="#5-Eigen中的对角矩阵" class="headerlink" title="5.Eigen中的对角矩阵"></a>5.Eigen中的对角矩阵</h3><p>参考<a href="http://eigen.tuxfamily.org/dox/group__QuickRefPage.html" target="_blank" rel="noopener">链接</a><br>对角矩阵的使用有两种方式。第一种是声明一个对角矩阵，然后用向量来赋值，第二种是把向量看做对角矩阵<br>首先在上面文件开头加上</p>
+1</code></pre><p>利用压缩存储构造稀疏矩阵也可以采用如下方式:</p>
+<pre><code>//typedef Eigen::SparseMatrix&lt;double&gt; SpMat;
+SpMat A;
+At = Map&lt;SpMat,RowMajor&gt;(n,m,nnz,Ap,Ai,Ax);</code></pre><h3 id="5-Eigen中的对角矩阵"><a href="#5-Eigen中的对角矩阵" class="headerlink" title="5.Eigen中的对角矩阵"></a>5.Eigen中的对角矩阵</h3><p>参考<a href="http://eigen.tuxfamily.org/dox/group__QuickRefPage.html" target="_blank" rel="noopener">链接</a><br>对角矩阵的使用有两种方式。第一种是声明一个对角矩阵，然后用向量来赋值，第二种是把向量看做对角矩阵<br>首先在上面文件开头加上</p>
 <pre><code>typedef Eigen::DiagonalMatrix&lt;double,Dynamic&gt; DiagMat;</code></pre><p>结尾处加上</p>
 <pre><code>DiagMat S(N);
 VectorXd c(N);
@@ -545,7 +548,9 @@ cout&lt;&lt; c.asDiagonal()*sm2&lt;&lt;endl;//方式二</code></pre><p>输出结
 0 0 0 0 0 0 9.1 0 0 3.92 
 0 0 0 0 0 0 0 12.8 0.88 0 
 0 0 0 0 0 0 0 0 12.6 0 
-0 0 0 0 0 0 0 0 0 31 </code></pre><hr>
+0 0 0 0 0 0 0 0 0 31 </code></pre><ul>
+<li><a href="http://eigen.tuxfamily.org/dox/group__TopicSparseSystems.html" target="_blank" rel="noopener">参考链接</a></li>
+</ul>
 
             </div>
             <hr/>
